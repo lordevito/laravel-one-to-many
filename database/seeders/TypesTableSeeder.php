@@ -16,7 +16,7 @@ class TypesTableSeeder extends Seeder
     public function run(): void
     {
         $types = ['Frontend', 'Backend'];
-
+        Type::truncate();
         foreach ($types as $type) {
             $new_type = new Type();
 
